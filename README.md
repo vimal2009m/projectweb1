@@ -1,4 +1,20 @@
-Role Name
+## Vimal Test Page for ReadMe
+This file using for testing
+${package.json.version} .
+```
+
+This will create the dillinger image and pull in the necessary dependencies.
+Be sure to swap out `${package.json.version}` with the actual
+version of Dillinger.
+
+Once done, run the Docker image and map the port to whatever you wish on
+your host. In this example, we simply map port 8000 of the host to
+port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
+
+```sh
+docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
+```
+
 =========
 
 A brief description of the role goes here.
