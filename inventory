@@ -1,0 +1,16 @@
+[all]
+192.168.159.140
+192.168.159.139
+
+control04 ansible_host=localhost ansible_connection=local
+
+[ubuntu]
+192.168.159.140
+control04 ansible_host=localhost ansible_connection=local
+
+[centos]
+192.168.159.139
+
+
+[ubuntu:vars]
+user=jas

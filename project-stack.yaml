@@ -1,0 +1,6 @@
+---
+- hosts: centos
+  name: " Main Playbook Execution"
+  roles:
+    - project1
+    

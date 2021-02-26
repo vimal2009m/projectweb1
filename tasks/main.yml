@@ -1,0 +1,11 @@
+---
+- name: "Install Httpd"
+  yum:
+    name: httpd
+    state: present
+- name: " Copy Index.html"
+  copy: 
+    src: index.html 
+    dest: /var/www/html/index.html
+  notify:
+  - restart httpd
